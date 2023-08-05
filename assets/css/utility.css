@@ -1,0 +1,36 @@
+:root{
+    --color-primary:#ff8b38;
+    --color-secondary:#ff9b51;
+    --color-dark:#000;
+    --color-white:#fff;
+    --color-text:#86878b;
+    --color-placeholder:#bdbdbd;
+    --color-border:#b7b7b7;
+}
+.para{
+    color: var(--color-text);
+}
+.font-weight-bold{
+    position: relative;
+}
+.font-weight-bold::after{
+    content: '';
+    top: 0;
+    bottom: 0;
+    height: 2px;
+    background: orange;
+    position: absolute;
+}
+.shortborder{
+    position: relative;
+    margin-bottom: 40px;
+}
+.shortborder::after{
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    width: 65px;
+    height: 3px;
+    background: orange;
+    left: 5px;
+}
